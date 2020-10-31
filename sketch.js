@@ -24,11 +24,6 @@ function setup() {
 	
 	ground=Bodies.rectangle(200,390,200,20,ground_options)
 	World.add(world,ground)
-	
-	var package_options={
-		restitution:1.0
-		
-		}
 
 	packageSprite=createSprite(width/2, 80, 10,10);
 	packageSprite.addImage(packageIMG)
@@ -45,7 +40,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.7, isStatic:true});
+	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.6, isStatic:true});
 	World.add(world, packageBody);
 	
 
